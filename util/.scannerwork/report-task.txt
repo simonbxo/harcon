@@ -1,0 +1,7 @@
+organization=simonbxo-github
+projectKey=simonbxo_harcon
+serverUrl=https://sonarcloud.io
+serverVersion=7.7.0.23020
+dashboardUrl=https://sonarcloud.io/dashboard?id=simonbxo_harcon
+ceTaskId=AWnXr_bynZhjUG4ScvD5
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWnXr_bynZhjUG4ScvD5

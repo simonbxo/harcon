@@ -9,6 +9,20 @@ let extensionMatcher = function (extension) {
 		return file.endsWith( extension )
 	}
 }
+asdf
+
+function getItems() {
+    const items = [1, 2, 3];
+    return items.map(function (item) {
+        return item * 2;
+    })
+    ;
+}
+
+var x = 1;; // Noncompliant
+
+function foo() {
+};  // Noncompliant
 
 module.exports = {
 	readFlows: function ( folder, matcher = '.flow', defs = [] ) {
