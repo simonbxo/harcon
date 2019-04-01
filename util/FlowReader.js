@@ -10,6 +10,14 @@ let extensionMatcher = function (extension) {
 	}
 }
 
+function getItems() {
+    const items = [1, 2, 3];
+    return items.map(function (item) {
+        return item * 2;
+    })
+    ;
+}
+
 module.exports = {
 	readFlows: function ( folder, matcher = '.flow', defs = [] ) {
 		let files = fs.readdirSync(folder )
