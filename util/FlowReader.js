@@ -9,6 +9,7 @@ let extensionMatcher = function (extension) {
 		return file.endsWith( extension )
 	}
 }
+asdf
 
 function getItems() {
     const items = [1, 2, 3];
@@ -17,6 +18,11 @@ function getItems() {
     })
     ;
 }
+
+var x = 1;; // Noncompliant
+
+function foo() {
+};  // Noncompliant
 
 module.exports = {
 	readFlows: function ( folder, matcher = '.flow', defs = [] ) {
