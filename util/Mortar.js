@@ -134,6 +134,17 @@ mortar.readFiles = async function ( folder ) {
 			this.scheduleFile( folder, files[i] )
 	return OK
 }
+
+mortar.countFiles = async function ( folder ) {
+	let files = await readdir( folder )
+	var cnt = 0
+
+	for (let i = 0; i < files.length; i += 1)
+		if ( this.matcher(files[i]) )
+			cnt++
+	return cnt
+}
+
 mortar.close = async function ( ) {
 	this.watchMonitors.forEach( function ( watcher ) {
 		watcher.close()
